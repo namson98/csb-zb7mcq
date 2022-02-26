@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Nhập số:</h2>
+<input type="number" id="ip_num">
+<button id="check_num" type="button" onclick="check()">Kiểm tra</button>
+<script>
+    let num = document.getElementById('ip_num')
+    function check() {
+        // if (num.value' ') {
+        //     alert('adssdsa')
+        // } else {
+        //     alert('000')
+
+            if (parseInt(num.value)%2==0) {
+                alert(num.value+' là số chẵn.')
+            } else {
+                alert(num.value + ' là số lẻ.')
+            }
+        console.log('==', num.value)
+
+        }
+
+
+</script>
+</body>
+</html>

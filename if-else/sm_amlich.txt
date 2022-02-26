@@ -1,0 +1,11 @@
+ Name: gọi ra tên can chi của năm cần tính
+ Note: sử dụng với switch.
+ - Tìm can bằng cách lấy số của năm với 10. Tìm chi lấy số dư của năm với 12.
+ tạo 2 biến can, chi
+---Map <html>---
+<body>
+
+</body>
+---Map css---
+---Map js---
+let year = (Number(prompt('Nhập năm bạn cần tìm.'))

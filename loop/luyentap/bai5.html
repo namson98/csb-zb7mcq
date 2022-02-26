@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tong 20 so dau</title>
+</head>
+<body>
+<script>
+    let n1,n2
+    n1 = 0
+    n2 = 1
+    let fibo = n1+n2
+    let cnt=0
+    sum =0
+
+    while (cnt < 20) {     //cấu trúc của số fibo.
+        n1 = n2
+        n2 = fibo
+        fibo = n1 + n2
+        cnt++
+        document.write(n1+" ")
+
+        console.log("n1",n1)
+        console.log("Tong",n2+fibo)
+
+    }
+
+
+</script>
+</body>
+</html>

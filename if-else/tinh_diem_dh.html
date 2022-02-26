@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form {
+            padding: 10px;
+        }
+        input{
+            margin-bottom: 10px;
+        }
+        select{
+            margin-bottom: 05px
+        }
+    </style>
+</head>
+<body>
+
+<form action="">
+    <h1>Tính điểm ĐH khối </h1>
+    Môn Toán:
+    <input id="toan"  type="number"> <br>
+    Môn Văn:  <input id="van" type="number"> <br>
+    Môn Anh:  <input id="anh" type="number"> <br>
+
+    <select name="" id="kv" onchange="tongdiem()">
+        <option value="0.75">KV1</option>
+        <option value="0.25">KV2</option>
+        <option value="0.5">KV2-NT</option>
+        <option value="0">KV3</option>
+    </select>
+    <br>
+<!--    toan: <p id="ass"></p>-->
+
+    <button type="button" onclick="tongdiem() ">Tính điểm</button>
+
+    <h3 id="noti"></h3>
+</form>
+<script>
+
+    function tongdiem() {
+        let toan = +document.getElementById('toan').value
+        // let toann = Number(toan)
+        let van = +document.getElementById('van').value
+        let anh = +document.getElementById('anh').value
+        // document.getElementById('ass').innerText=toann.value
+        let kv = +document.getElementById('kv').value
+
+        let tong =  (toan+anh+van)+kv
+
+        console.log('tong',tong)
+        console.log('diem kv',kv.value)
+        document.getElementById('noti').innerText=tong
+
+        // switch (kv.value) {
+        //     case "kv1":
+        //         noti.innerText= "*" + (tong  + 0.75)     //Biểu thức để trong () sẽ ra được kết quả dạng số.
+        //         break
+        //     case "kv2":
+        //         noti.innerText= "*" + (tong  + 0.25)
+        //         break
+        //     case "nt":
+        //         noti.innerText= "*" + (tong  + 0.5)
+        //         break
+        //     case "kv3":
+        //         noti.innerText= "*" + (tong)
+        //         break
+        // }
+    }
+</script>
+</body>
+</html>

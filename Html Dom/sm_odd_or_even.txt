@@ -1,0 +1,11 @@
+ Name: tìm sô chẵn lẻ.
+ Note: khi điền 1 số vào khung input thì tạo ra được alert số đó+ là số chẵn hay lẻ.
+---Map <html>---
+<body>
+<h2> Nhập số:
+<input id=ip_num>
+<button id=check_num>Kiểm tra</>
+<scripr>
+</body>
+---Map css---
+---Map js---

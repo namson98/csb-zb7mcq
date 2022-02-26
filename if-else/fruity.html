@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1> Giá hoa quả</h1><br>
+    <select id="fru">
+        <option value="oi">ổi</option>
+        <option value="hau" id="02">Dưa hấu  </option>
+        <option value="tao" id="03">Táo </option>
+        <option value="xoai" id="04">Xoài </option>
+        <option value="cam" id="05">Cam </option>
+        <option value="chom" id="06">Chôm chôm </option>
+        <option value="m_cut" id="07">Măng cụt </option>
+    </select>
+    <button type="button" id="check_btn" onclick="baogia()"> Báo giá </button>
+    <br>
+    <h3>Chi tiết: </h3>
+    <p id="pri">[giá sản ]</p>
+</div>
+<script>
+    let sel=document.getElementById('fru');
+    let pri=document.getElementById('pri');
+    function baogia() {
+        switch (sel.value) {
+            case 'oi':
+                alert('Ổi: 20000 VNĐ/kg')
+                pri.innerText="Ổi: 20000 VNĐ/kg."
+                break
+            case "hau":
+                alert('Dưa Hấu: 20000 VNĐ/kg')
+                pri.innerText="Dưa Hấu: 20000 VNĐ/kg."
+                break
+            case "tao":
+                alert('Táo: 30000 VNĐ/kg')
+                pri.innerText="Táo: 30000 VNĐ/kg."
+                break
+            case "xoai":
+                alert('Xoài: 30000 VNĐ/kg')
+                pri.innerText="Xoài: 30000 VNĐ/kg."
+                break
+            case "cam":
+                alert('Cam: 40000 VNĐ/kg')
+                pri.innerText="Cam: 40000 VNĐ/kg."
+                break
+            case "chom":
+                alert('Chôm Chôm: 40000 VNĐ/kg')
+                pri.innerText="Chôm Chôm: 40000 VNĐ/kg."
+                break
+            case "m_cut":
+                alert('Măng Cụt: 50000 VNĐ/kg')
+                pri.innerText="Măng Cụt: 50000 VNĐ/kg."
+                break
+
+
+        }
+
+    }
+    console.log('==',sel.value)
+
+</script>
+</body>
+</html>

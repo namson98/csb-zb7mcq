@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+    <style>
+        body{
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        form{
+            /*transform: translateX(1px);*/
+            margin-left: ;
+            border-style: solid;
+            width: 300px;
+            height: 350px;
+            padding: 30px;
+            background: linear-gradient(to bottom left, #33ccff 31%, #ff99cc 100%);        };
+
+        }
+        button{
+            height: 20px;
+            width: 35px;
+            padding: ;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+        }
+        button#calcu{
+            width: auto;
+            height: auto;
+        }
+        .d2{
+            text-align-all: center;
+            display:flex;
+            justify-content: center;
+            /*align-items: center;*/
+        }
+        div{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <h1>Caculator</h1>
+    No1.
+    <input id="in01" type="number"><br>
+    No2.
+    <input id="in02" type="number">
+
+    <div>
+        <button id="cong" type="button" value="+" onclick="tcong()">+</button>
+        <button id="tru" type="button" value="-" onclick="ttru()">-</button>
+        <button id="nhan" type="button" value="*" onclick="tnhan()">*</button>
+        <button id="chia" type="button" value="/" onclick="tchia()">/</button>
+    </div>
+    <h3 id="res01"></h3>
+
+
+    <button id="calcu" type="button" onclick="function f() {
+        document.getElementById('in01').value='';
+        document.getElementById('in02').value='';
+    }
+f()">[C]</button>
+    <button type="button" onclick="alert('Result: '+res01.textContent)">=</button>
+</form>
+<script>
+    let in01 =document.getElementById('in01');
+    let in02 =document.getElementById('in02');
+
+    let cong = document.getElementById('cong');
+    let tru = document.getElementById('tru');
+    let nhan = document.getElementById('nhan');
+    let chia = document.getElementById('chia');
+
+    var res01 = document.getElementById('res01');
+
+    //
+    function tcong() {
+        document.getElementById('res01').innerText=in01.value*1+in02.value*1 ;
+    }
+    function ttru() {
+        document.getElementById('res01').innerText=in01.value*1-in02.value*1 ;
+    }
+    function tnhan() {
+        document.getElementById('res01').innerText=in01.value*1*in02.value*1 ;
+    }
+    function tchia() {
+        document.getElementById('res01').innerText=in01.value*1/in02.value*1 ;
+    }
+
+</script>
+</body>
+</html>

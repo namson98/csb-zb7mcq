@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>su dung cac ham co san cua mang </title>
+</head>
+<body>
+<script>
+    //BÀI 1 nối phần tử
+// let myColor = ["Red", "Green", "White", "Black"];
+// document.write('"'+myColor.join()+'"')
+    //BÀI 2 chèn dấu -
+
+//     let num = prompt('Xin mời nhập kí tự là số.');
+//     let str = num.toString();
+//     let result = [str[0]]   //Phan duoi se duyet phan tu tu 1
+// console.log(str)
+//
+//     for (let i = 1;i<str.length;i++) {
+//         if (str[i-1] % 2=== 0 && str[i]%2===0){
+//             result.push('-',str[i]);
+//             console.log(str[1])
+//
+//         } else {
+//             result.push(str[i]);
+//         }
+//     }
+//     document.write(result.join(''))
+//     console.log('result[]',result)
+
+
+    // BÀI 3 chuyển chuỗi chữ thường thành chữ hoa và ngược lại.
+
+    let  str3 = prompt('Hãy nhập chuỗi có ký tự thường để chuyển đổi thành dạng viết in.');
+    const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const lower = 'abcdefghijklmnopqrstuvwxyz';
+    const result = [];
+console.log(result)
+
+    for (let i=0;i<str3.length;i++){
+        if (upper.includes(str3[i])) {       //Duyệt kiểm tra chuỗi nhập vào có kí tự khớ với có phần từ có sẵn hay ko.
+           result.push(str3[i].toLowerCase())
+        } else if(lower.includes(str3[i])) {
+            result.push(str3[i].toUpperCase())
+        }
+        else {
+            result.push(str3[i])
+        }
+    }
+    document.write(result.join(""))
+
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>click on </title>
+</head>
+<body>
+<!--bai tap 01-->
+<button type="button" onclick="show01()"> click Me</button>
+<script>
+    function show01() {
+        alert('xin chao!')
+    }
+</script>
+<!--bai tai 02-->
+<div id="ms02">
+    <button type="button" onclick="show02()">ClickMe2</button>
+    <script>
+        function show02() {
+            document.getElementById('ms02').innerHTML='xin chao!';
+            // bai tap 03
+            // document.write('19 Phu Tho xin chao!')
+            // console.log('xin chao!');
+
+            const p1=document.createElement('h1');
+            p1.innerHTML='Hello!';
+            const div=document.getElementById('ms02');
+            div.appendChild(p1);
+        }
+    </script>
+</div>
+<button type="button" onclick="del()">del ClcikMe2</button>
+<script>
+    // sau id nhat dinh phai co ngoac
+    // const la dat 1 hang so, var dat 1 gia tri, let cho phep thuc hien phep toan doi voi doi tuong duoc goi den.
+    function del() {
+        const ms02=document.getElementById('ms02');
+        ms02.remove()
+    }
+</script>
+<hr>
+<h1 id="mn">mina-san konichiwa</h1>
+<script>
+    var mouse = document.getElementById('mn');
+    mouse.addEventListener('mouseover',chuotvao);
+    mouse.addEventListener("mouseout", chuotra);
+    function chuotvao() {
+        document.getElementById('mn').innerHTML='not here';
+        document.getElementById('mn').style.color='red';
+
+    }
+    function chuotra() {
+        document.getElementById('mn').style.color='green';
+        document.getElementById('mn').innerHTML='Xin chao moi nguoi';
+        document.getElementById('mn').style.textAlign='center';
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ngoi sao</title>
+</head>
+<body>
+<script>
+    let ngoisao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe','Regulus']
+    let chomsao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major',  'Leo']
+    console.log(ngoisao)
+
+    function timchomsao() {
+        let ip_ngoisao = prompt('Xin mời bạn nhập ngôi sao.')
+        let length = +ngoisao.length
+        let check =false
+        console.log(length-1)
+        for (let i=0;i<length;i++){
+            if (ip_ngoisao.toLowerCase() === ngoisao[i].toLowerCase()){
+                alert('Chòm sao bạn tìm là: '+chomsao[i])
+                break
+            } else if (i === length-1){
+                if (ip_ngoisao.toLowerCase() !== ngoisao[i].toLowerCase()){
+                    check=true;
+                    break;
+                }
+            } console.log('===',i)
+
+
+        }
+
+        // for (let i=0;i<length;i++) {
+        //     if (length=i+1 && ip_ngoisao.toLowerCase() !== ngoisao[i].toLowerCase()) {
+        //         check = true
+        //         break
+        //     }
+        // }
+        if (check){
+            alert(ip_ngoisao + ' không tìm thấy.')
+        }
+        console.log(check)
+    }
+
+
+
+    timchomsao()
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra so nguyen to</title>
+</head>
+<body>
+<script>
+
+    function isPrime() {
+        let inputPrime = parseInt(prompt("moi nhap so de kiem tra"));
+        console.log('in',inputPrime)
+        if (inputPrime < 2 || inputPrime > 10000) {
+            alert('so nhap vao ko hop le')
+        }
+        else {
+            let i = 2;
+            let check = true;
+            while (i <= Math.sqrt(inputPrime)) {
+                if (inputPrime % i == 0) {
+                    check = false
+                    console.log('====',inputPrime)
+                    console.log('i',i)
+                    alert('day ko phai la so nguyen to')
+                    break
+                }
+                i++
+            }
+            if (check) {
+                alert('day la so nguyen to')
+            }
+        }
+    }    isPrime()
+
+
+</script>
+</body>
+</html>

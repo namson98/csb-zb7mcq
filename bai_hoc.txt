@@ -1,0 +1,10 @@
+Dưới đây là Git thầy đã giảng và chia sẻ lại:
+    1. Sự kiện chuột :
+    https://github.com/nguyendongminhtri/MD1-Cac-Su-Kien-Chuot-Debug/blob/master/index.html?fbclid=IwAR2bORTFCImz_VY6csexH6LxuRSmmwZjGqyZtIkbFz-zGGE0jvfRSUyy6Dc
+
+    2. Mẫu máy tính:
+    https://github.com/nguyendongminhtri/MD1-Calculator-Sqrt/blob/master/index.html
+
+    3. lý thuyết if-esle & switch
+    https://github.com/nguyendongminhtri/MD1-Demo-LyThuyet-Cau-Truc-Dieu-Kien1/blob/master/index.html
+

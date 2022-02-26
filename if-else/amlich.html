@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let year = Number(prompt('Xin hãy nhập năm bạn muốn xem. Vd: 1998 sẽ được kết quả là mậu dần.'))
+    let can = year%10
+    let chi = year%12
+    console.log(can)
+    switch (can) {
+        case 0:
+            text = 'Canh '
+            break
+        case 1:
+            text = 'Tân '
+            break
+        case 2:
+            text = 'Nhâm '
+            break
+        case 3:
+            text = 'Quý '
+            break
+        case 4:
+            text = 'Giáp '
+            break
+        case 5:
+            text = 'Ất '
+            break
+        case 6:
+            text = 'Bính '
+            break
+        case 7:
+            text = 'Đinh '
+            break
+        case 8:
+            text = 'Mậu '
+            break
+        case 9:
+            text = 'Kỷ '
+            break
+    } console.log('===',text)
+    switch (chi) {
+        case 0:
+            alert(text+'Thân.')
+            break
+        case 1:
+            alert(text+'Dậu.')
+            break
+        case 2:
+            alert(text+'Tuất.')
+            break
+        case 3:
+            alert(text+'Hợi.')
+            break
+        case 4:
+            alert(text+'Tý.')
+            break
+        case 5:
+            alert(text+'Sửu.')
+            break
+        case 6:
+            alert(text+'Dần.')
+            break
+        case 7:
+            alert(text+'Mão.')
+            break
+        case 8:
+            alert(text+'Thìn.')
+            break
+        case 9:
+            alert(text+'Tỵ.')
+            break
+        case 10:
+            alert(text+'Ngọ.')
+            break
+        case 11:
+            alert(text+'Mùi.')
+            break
+
+
+    }
+</script>
+</body>
+</html>

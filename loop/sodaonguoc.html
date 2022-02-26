@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so nguoc</title>
+</head>
+<body>
+<script>
+    let num_hantai = prompt("Xin moi nhap so nguyen duong")
+    let num_length,hantai
+    num_length = num_hantai.length      //đôj dài của  chuỗi.
+    hantai = 0
+console.log('num=',num_hantai)
+
+    while (num_length > 0) {
+        console.log('length=',num_hantai.length)
+
+        hantai =  num_hantai % 10
+        console.log('hantai',hantai)
+        num_hantai = Math.floor(num_hantai/10)      //làm tròn phép toán khi bỏ bớt 10 đơn vị.
+        console.log('num hantai',num_hantai)
+        num_length--        //độ dài chuỗi sẽ được đếm ngược cho đén khi độ dài =0 là end
+        document.write(hantai)
+        console.log(num_length)
+
+    }
+
+</script>
+</body>
+</html>

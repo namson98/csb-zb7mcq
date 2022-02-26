@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Xin vui lòng chọn tháng muốn biết có bao nhiêu ngày.</h1>
+    <select name="" id="thang">
+        <option value="t1">Tháng 1</option>
+        <option value="t2">Tháng 2</option>
+        <option value="t3">Tháng 3</option>
+        <option value="t4">Tháng 4</option>
+        <option value="t5">Tháng 5</option>
+        <option value="t6">Tháng 6</option>
+        <option value="t7">Tháng 7</option>
+        <option value="t8">Tháng 8</option>
+        <option value="t9">Tháng 9</option>
+        <option value="t10">Tháng 10</option>
+        <option value="t11">Tháng 11</option>
+        <option value="t12">Tháng 12</option>
+
+    </select>
+<button type="button" onclick="cl_month()">*</button>
+<h3 id="text_thang">ket qua</h3>
+
+<script>
+    let thangg = document.getElementById('thang')
+console.log("thang",thangg)
+    let text_thang = document.getElementById('text_thang')
+
+    function cl_month() {
+        switch (thangg.value) {  //không được phép gọi value ở let vì nó sẽ nhận value đầu tiên làm mặc định
+            //nhất định phải láy value ở sau cùng tránh hiểu nhầm.
+            case 't1':
+            case 't3':
+            case 't5':
+            case 't7':
+            case 't8':
+            case 't10':
+            case 't12':
+                text_thang.innerText = "31 days.";
+                break
+            case "t2":
+                text_thang.innerText = "28 or 29 days.";
+                break
+            case 't4':
+            case 't6':
+            case 't9':
+            case 't11':
+                text_thang.innerText = "30 days.";
+                break
+        }
+
+    }
+
+</script>
+</body>
+</html>

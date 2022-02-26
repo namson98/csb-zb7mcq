@@ -1,0 +1,18 @@
+
+site-map <html>
+<body>
+01 <form>
+    h1 : calculator
+    <input id-=in01>
+    <input id=in02>
+
+    div
+        04 <button id= cong,
+        tru
+        nhan
+        chia>
+     <h3 id=re01> [C]
+    <button onclick=calcu> //sau khi nhấn nút thì biến mất và hiển thị kết quả tại đây.
+<form>
+<script>
+<body>

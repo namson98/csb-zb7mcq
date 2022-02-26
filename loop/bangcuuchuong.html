@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bang cuu chuong</title>
+</head>
+<body>
+<table border="2">
+    <tr>
+        <td>2x1</td>
+        <td>3x1</td>
+    </tr>
+    <tr>
+        <td>2x2</td>
+        <td>3x2</td>
+    </tr>
+</table>
+<br>
+<script>
+    let i,j,tbw
+    i  =  1
+    // j = 2
+    tbw = "<table border='2' >"     //Tạo bảng.
+
+    while (i < 10) {     //Tạo cột. Cột sẽ lặp khi i nhỏ hơn 10.
+        j = 2;      //Băt buộc phải khai giá trị trong vòng lặp.
+        tbw = tbw + "<tr>";
+        while (j < 10) {
+            tbw = tbw + "<td>"+     j++ +'x'+ i     +'=' + (j-1)*i +"</td>";
+        }
+        tbw = tbw + "</tr>";
+        i++;        //Tăng i.
+
+    }
+    tbw = tbw + "</table>";      //kết thúc bảng.
+    document.write(tbw);
+</script>
+
+</body>
+</html>

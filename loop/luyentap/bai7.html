@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 3 & 5</title>
+    <style>
+        body{
+            /*display: flex;*/
+        }
+    </style>
+</head>
+<body>
+<script>
+    let b7 = 0
+
+    while (b7<=100) {
+        // document.write(b7+" ")
+        b7++
+        if (b7%3 == 0){
+            document.write(" <p style='color: #055ffc'> fizz </p> ")
+            console.log(b7,"---",b7%3)
+        }
+        if (b7%5 == 0){
+            document.write(" <p style='color: #f62b18'> buzz </p> ")
+            console.log(b7,"-----")
+
+        }
+        if (b7%3 && b7%5 == 0){
+            document.write(" <p style='color: #b15fe9'> FizzBuzz </p>")
+        }else {
+            document.write(b7+" ")
+
+        }
+
+
+    }
+
+</script>
+</body>
+</html>

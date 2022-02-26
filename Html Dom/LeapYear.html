@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let year = parseInt(prompt("Enter a year"));
+    let isLeapYear = false;
+    // Nhận giá trị = false. khi thay đổi giá trị của biến thì biến được kích hoạt lại.
+
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                isLeapYear = true;
+            }
+        } else { //ở đây có nghĩa tất cả các trường hợp khác không có tại đầy thì đều có giá trị là false.
+            isLeapYear = true;
+        }
+    }
+//ý nghĩa dòng code là: hiện tại biến đang = false. Nhưng nếu biến là biến, tức là = true thì là năm sẽ là nhuận.
+    if (isLeapYear) {
+        alert(year + " is a leap year");
+    } else {
+        alert(year + " is NOT a leap year");
+    }
+</script>
+
+</body>
+</html>

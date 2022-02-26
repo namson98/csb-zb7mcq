@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doan so</title>
+</head>
+<body>
+<label>
+    doan so tu 1 den 10
+</label>
+<input id="number" type="number">
+<button id="btn" onclick="doanso()"> Doan xem</button>
+<p  style="color: blue" id="random"> </p>
+<p id="count" style="color: red"></p>
+<script>
+    count = 3
+    function doanso() {
+        document.getElementById("btn").innerHTML="doan tiep"
+        let num = document.getElementById("number").value
+        let random = Math.floor(Math.random()*10+1)
+        document.getElementById("random").innerHTML="so trung thuong la: " + random
+
+        if (num == random && count >= 0) {
+            alert("doan dung")
+        } else {
+            count--
+        }
+        document.getElementById("count").innerHTML="so luot choi con lai la: " +count
+        if (count<=0) {
+            document.getElementById("count").innerHTML="ban da het luot choi."
+            document.getElementById("btn").innerHTML="Choi lai"
+            document.getElementById("number").value = " "
+            count = 3
+            return
+        }
+
+    }
+</script>
+</body>
+</html>

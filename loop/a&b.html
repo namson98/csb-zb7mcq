@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h5 id="a&b"></h5>
+<script>
+    let aa,bb ;
+    let text
+    aa = parseInt(prompt('Please input your a\' s value')) ;
+    bb = parseInt(prompt('Please input your b\' s value')) ;
+    for (aa>=0 && bb >= 0;aa<=bb;aa= aa+1) {
+        text += "The number is " + aa + "<br>";
+console.log('aa==',aa)
+    }
+    document.getElementById("a&b").innerHTML = text;
+</script>
+</body>
+</html>

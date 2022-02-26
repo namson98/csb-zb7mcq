@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so fibonacci</title>
+</head>
+<body>
+<h2>Day so la: </h2>
+<script>
+
+    let ip_fibo = parseInt(prompt('hay nhap n'))        //đích đén của dãy số.
+    let n1,n2
+    n1 = 0
+    n2 = 1
+    let fibo = n1+n2
+
+    while (fibo <= ip_fibo+1) {     //cấu trúc của số fibo.
+        n1 = n2
+        n2 = fibo
+        fibo = n1 + n2
+
+        document.write(n1)
+    }
+
+</script>
+
+</body>
+</html>

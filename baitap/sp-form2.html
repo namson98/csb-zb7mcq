@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form</title>
+    <style>
+        form#a1{
+            margin-left: 20px;
+            margin-top: 50px;
+            width: 450px;
+            border-style: groove;
+            border-width: 10px;
+            /*padding: 5px;*/
+            border-color: beige;
+            background-color: cadetblue;
+        }
+        input{
+            /*margin-left: 25px;*/
+            /*text-align-all: left;*/
+        }
+        div#d1{
+            margin-left: 60px;
+        }
+        div#d2{
+            margin-left: 155px;
+        }
+        div#d3{
+            margin-left: 30px;
+        }
+        h1 {
+            background-color: plum;
+            text-align: center;
+            margin-top: 0px;
+            border-bottom-style: groove;
+            border-bottom-color: navy;
+            border-bottom-width: medium;
+        }
+        form#a2{
+            background-color: #6cb4f3;
+            border-color: #ca1fb2;
+            border-width: 5px;
+            border-style: double;
+            width: 400px;
+        }
+        div#d4{
+            margin-left: 50px;
+        }
+        div#d5{
+            text-align: center;
+            margin-top: 10px;margin-bottom: 10px;
+            margin-inside: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<form id="a1">
+    <h1>Your Favourites</h1>
+    <div id="d1">
+        Fistname: <input style="margin-left: 30px"  size="9" name="Fname">
+        Name: <input size="7" type="text" name="Name"><br>
+        Email: <input size="25" style="margin-left: 50px" type="email" value="@">
+    </div>
+        <br>
+    <div id="d2">
+    <p style="text-align: left">Favourites:</p>
+    <input type="radio">Sport</input>
+    <input style="margin-left: 29px" type="radio">Music</input>
+    <input style="margin-left: 17px" type="radio">Reading
+    <br>
+        <input type="radio">Shopping
+        <input type="radio">Gaming
+        <input style="margin-left: 5px" type="radio">Movie
+    <br>
+        <input type="radio">Traveling
+        <input type="radio">Dancing
+        <input type="radio">Sleepy
+    </div>
+    <br>
+    <div id="d3">
+        <button>Send</button>
+        <button>Reset</button>
+    </div>
+</form>
+<br>
+<hr>
+<br>
+<form id="a2">
+    <h1>Regist</h1>
+    <div id="d4">
+    Fist Name: <input style="margin-left: 18px" size="9" type="text">
+    Name: <input size="7" type="text">
+    <br>
+    Date of birth: <input type="date"><br>
+    Sex: <select style="margin-left: 59px" name="sex" id="sex">
+    <option value="">Male</option>
+    <option value="">Female</option>
+    </select><br>
+    Place: <input size="30" style="margin-left: 50px;height: 30px" type="text"><br>
+        Class: <select size="1" style="margin-left: 49px" name="" id="" value="-Class-">
+        <option value="-Class_">-class-</option>
+    </select><br>
+    Email: <input style="margin-left: 47px" type="email"value="@"><br>
+    Phone No. <input style="margin-left: 22px" type="text"><br>
+    </div>
+    <div id="d5">
+    <button>Regist</button>
+    <button>Reset</button>
+    </div>
+
+    
+</form>
+</body>
+</html>
